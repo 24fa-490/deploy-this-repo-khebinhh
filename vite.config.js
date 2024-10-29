@@ -8,7 +8,9 @@ export default defineConfig({
 		mkcert()
 	],
 	server: {
-		https: true,
+		host: true,
+		port: 5173,
+		https: false,
 		proxy: {}, // essential to avoid "can't use Symbol where you need a string" error
 	},
 })
